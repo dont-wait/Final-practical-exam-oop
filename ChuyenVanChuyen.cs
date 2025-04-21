@@ -25,6 +25,7 @@ namespace KT_OnTap
         public void DocFile(string fileName) {
             XmlDocument read = new XmlDocument();
             read.Load(fileName);
+            
             string tenChuyenVC = read.SelectSingleNode("/ChuyenVC/TenCVC").InnerText;
             string noiDen = read.SelectSingleNode("/ChuyenVC/NoiDen").InnerText;
             XmlNodeList employees = read.SelectNodes("/ChuyenVC/DS/NV");
@@ -44,8 +45,8 @@ namespace KT_OnTap
                     long luongCanBan = long.Parse(employee["LCBXK"].InnerText);
                     int soChuyen = int.Parse(employee["SOC"].InnerText);
                     long phuCap = long.Parse(employee["PCC"].InnerText);
-                    var tx = new TaiXeXeKhach(maNhanVien, hoTen, gioiTinh, luongCanBan, soChuyen, phuCap);
-                    _nhanViens.Add(tx);
+                    nv = new TaiXeXeKhach(maNhanVien, hoTen, gioiTinh, luongCanBan, soChuyen, phuCap);
+                    _nhanViens.Add(nv);
                 }
                 else if(loaiNV.Equals("TXXT")) {
                     long luongCanBan = long.Parse(employee["LCBXT"].InnerText);
@@ -54,8 +55,6 @@ namespace KT_OnTap
                     nv = new TaiXeXeTai(maNhanVien, hoTen, gioiTinh, luongCanBan, soChuyen, phuCap);
                     _nhanViens.Add(nv);
                 }
-
-
 
             }
             this.tenChuyenVC = tenChuyenVC;
@@ -72,5 +71,59 @@ namespace KT_OnTap
             }
         }
 
+        public long TinhTongLuong() {
+            long tongLuong = 0;
+            foreach (NhanVien nv in _nhanViens)
+            {
+                tongLuong += nv.TinhLuong();
+            }
+            return tongLuong;
+        }
+
+        //Chua hay - lay ra danh sach ms hay...
+        public NhanVien? GetInfoEmployeeHasMaxSalary() => _nhanViens.FirstOrDefault(nv => nv.TinhLuong() == 
+                                                                                    _nhanViens.Max(nv => nv.TinhLuong()));
+
+        public int GetTotalSoChuyenXeKhach() {
+            int count = 0;
+            foreach(var nv in _nhanViens)
+                if(nv is TaiXeXeKhach taiXeXeKhach) //Pattern matching Nga^`u va~i
+                    count += taiXeXeKhach.SoChuyen;
+            return count;
+        }
+
+        public void PrintNhanVienVanPhong() {
+            Console.WriteLine("Danh sach nhan vien van phong: ");
+            foreach (var nv in _nhanViens)
+            {
+                if (nv is NhanVienVanPhong nhanVienVanPhong)
+                {
+                    Console.WriteLine(nhanVienVanPhong.ToString());
+                }
+            }
+        }
+
+        public void SortAscByHoTenAndDesBySalary() {
+            _nhanViens = _nhanViens.OrderBy(nv => nv.HoTen).ThenByDescending(nv => nv.TinhLuong()).ToList();
+            Console.WriteLine("Danh sach nhan vien sap xep tang dan theo ho ten va giam dan theo luong: ");
+            HienThi();
+        }
+
+        private NhanVien? FindNhanVienByMa(string X) {
+            foreach (var nv in _nhanViens)
+            {
+                if (nv.MaNhanVien.Equals(X))
+                    return nv;
+            }
+            return null;
+        }
+        public void GetNhanVienByMa(string maNV) {
+            NhanVien? nv = FindNhanVienByMa(maNV);
+            System.Console.WriteLine($"Thong tin nhan vien co ma {maNV}:");
+            if (nv != null)
+                Console.WriteLine(nv.ToString());
+            else
+                Console.WriteLine("Nhan vien moi");
+        }
     }
 }

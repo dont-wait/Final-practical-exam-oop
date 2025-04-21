@@ -8,7 +8,7 @@
             <TEN>Dinh Tan</TEN>
             <GT>Nam</GT>
             <LCBXK>500000</LCBXK>
-            <SOC>100</SOC>
+            <SOC>500</SOC>
             <PCC>50000</PCC>
         </NV>
         <NV Loai="VP">
@@ -27,10 +27,10 @@
         </NV>
         <NV Loai="TXXT">
             <MA>NVT004</MA>
-            <TEN>Tuan Hai</TEN>
+            <TEN>THanh My</TEN>
             <GT>Nam</GT>
-            <LCBXT>350000</LCBXT>
-            <SOC>120</SOC>
+            <LCBXT>3500000</LCBXT>
+            <SOC>121</SOC>
             <PCTD>100000</PCTD>
         </NV>
         <NV Loai="VP">
