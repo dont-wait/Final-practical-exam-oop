@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KT-OnTap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+effd621967358431664eac1da9209f9d1978ce6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6aab053327bb42b278d90f9b87530ad456510a3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("KT-OnTap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KT-OnTap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
