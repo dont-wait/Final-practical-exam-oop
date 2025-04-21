@@ -1,0 +1,14 @@
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/bin/Debug/net8.0/KT-OnTap
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/bin/Debug/net8.0/KT-OnTap.deps.json
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/bin/Debug/net8.0/KT-OnTap.runtimeconfig.json
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/bin/Debug/net8.0/KT-OnTap.dll
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/bin/Debug/net8.0/KT-OnTap.pdb
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/KT-OnTap.GeneratedMSBuildEditorConfig.editorconfig
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/KT-OnTap.AssemblyInfoInputs.cache
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/KT-OnTap.AssemblyInfo.cs
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/KT-OnTap.csproj.CoreCompileInputs.cache
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/KT-OnTap.dll
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/refint/KT-OnTap.dll
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/KT-OnTap.pdb
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/KT-OnTap.genruntimeconfig.cache
+/home/dontwait/Documents/SEMESTER04/OOP/OnTap/KT-OnTap/obj/Debug/net8.0/ref/KT-OnTap.dll

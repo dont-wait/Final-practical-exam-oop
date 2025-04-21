@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ChuyenVC>
+    <TenCVC>Van chuyen 01</TenCVC>
+    <NoiDen>Da Nang</NoiDen>
+    <DS>
+        <NV Loai="TXXK">
+            <MA>NVK001</MA>
+            <TEN>Dinh Tan</TEN>
+            <GT>Nam</GT>
+            <LCBXK>500000</LCBXK>
+            <SOC>100</SOC>
+            <PCC>50000</PCC>
+        </NV>
+        <NV Loai="VP">
+            <MA>NV002</MA>
+            <TEN>Thanh Ngan</TEN>
+            <GT>Nu</GT>
+            <SoNgayLV>24</SoNgayLV>
+        </NV>
+        <NV Loai="TXXT">
+            <MA>NVT003</MA>
+            <TEN>Le Hung</TEN>
+            <GT>Nam</GT>
+            <LCBXT>350000</LCBXT>
+            <SOC>120</SOC>
+            <PCTD>100000</PCTD>
+        </NV>
+        <NV Loai="TXXT">
+            <MA>NVT004</MA>
+            <TEN>Tuan Hai</TEN>
+            <GT>Nam</GT>
+            <LCBXT>350000</LCBXT>
+            <SOC>120</SOC>
+            <PCTD>100000</PCTD>
+        </NV>
+        <NV Loai="VP">
+            <MA>NV005</MA>
+            <TEN>Thanh My</TEN>
+            <GT>Nu</GT>
+            <SoNgayLV>34</SoNgayLV>
+        </NV>
+    </DS>
+</ChuyenVC>
